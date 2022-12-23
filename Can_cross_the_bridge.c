@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int a,x,y,z;
+    int x,y,z,a;
     scanf("%d%d%d",&x,&y,&z);
     a=(z-y)/x;
     {

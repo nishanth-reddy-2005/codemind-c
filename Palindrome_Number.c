@@ -1,28 +1,28 @@
 #include<stdio.h>
 int main()
 {
-    int i,n,a=0,r,sum=0,temp,t;
-    scanf("%d",&t);
-    for(i=1;i<=t;i++)
+    int Tc;
+    scanf("%d",&Tc);
+    while(Tc--)
     {
+        int n,rev=0,rem,p;
         scanf("%d",&n);
-        temp=n;
-        sum=0;
+        p=n;
         while(n>0)
         {
-            r=n%10;
-            sum=(sum*10)+r;
+            rem=n%10;
             n=n/10;
+            rev=rev*10+rem;
         }
-        if(temp==sum)
+        if(p==rev)
         {
-            printf("True");
+            printf("True
+");
         }
         else
         {
-            printf("False");
-        }
-        printf("
+            printf("False
 ");
+        }
     }
 }
